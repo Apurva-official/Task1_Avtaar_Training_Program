@@ -4,7 +4,7 @@
 ### Step-by-step guide
 
 
-#### 1. Clone/fork the repository.
+#### 1. Clone/fork the repository. Open up your terminal or console from where you can run npm commands such as git bash or hyper terminal. After opening up terminal, use cd command to switch to the directory/folder where your project currently is.
 
 #### 2. Initialize your npm package 
 

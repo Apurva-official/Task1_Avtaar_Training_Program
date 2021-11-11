@@ -34,9 +34,9 @@
 
 #### 7. If you see the interface shown below, congratulations everything is up to the mark and now you can test the project and see how its working.
 
-![Interface_1.jpg](https://github.com/Apurva-official/readme/blob/main/Screenshot%20(233).png)
+![https://github.com/Apurva-official/Task1_Avtaar_Training_Program/blob/main/Screenshot%20(233).png)
 
-![Interface_2.jpg](https://github.com/Apurva-official/readme/blob/main/Screenshot%20(234).png)
+![https://github.com/Apurva-official/Task1_Avtaar_Training_Program/blob/main/Screenshot%20(234).png)
 
 ### Some Optional Instructions
 

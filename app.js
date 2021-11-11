@@ -1,10 +1,12 @@
 //jshint vscode es6
-
+var j=101
 const express = require('express')
 const bodyParser = require('body-parser')
 const request = require('request')
 
 const port = 3000
+
+var count = []
 
 const app = express();
 
@@ -44,11 +46,13 @@ app.post("/", function(req, res){
   for(var i=0; i<10;i++){
     result += characterRef.charAt(Math.floor(Math.random() * charLength));
   }
- 
-  var uniqueID = result
+
+  count.push(j+1)
+  j++
+  var uniqueID = result +"-"+j;
   var time =  hr + ":" + min + ":" + sec
   // 
-  res.render("result", {userName: name, userUniqueId: uniqueID, DayNDate: day,inputTime: time})
+  res.render("result", {userName: name, userUniqueId: uniqueID, DayNDate: day,inputTime: time,counts: count})
 
 
   // console.log(name)

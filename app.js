@@ -1,12 +1,12 @@
 //jshint vscode es6
-var j=101
+
+
 const express = require('express')
 const bodyParser = require('body-parser')
 const request = require('request')
+const {v4 : uuidv4} = require('uuid')
 
 const port = 3000
-
-var count = []
 
 const app = express();
 
@@ -38,21 +38,12 @@ app.post("/", function(req, res){
   let hr = today.getHours()
   let sec = today.getSeconds()
 
-  var result = '';
-  var characterRef = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-  var charLength = characterRef.length;
+ 
+  var uniqueID = uuidv4();
 
-
-  for(var i=0; i<10;i++){
-    result += characterRef.charAt(Math.floor(Math.random() * charLength));
-  }
-
-  count.push(j+1)
-  j++
-  var uniqueID = result +"-"+j;
   var time =  hr + ":" + min + ":" + sec
   // 
-  res.render("result", {userName: name, userUniqueId: uniqueID, DayNDate: day,inputTime: time,counts: count})
+  res.render("result", {userName: name, userUniqueId: uniqueID, DayNDate: day,inputTime: time})
 
 
   // console.log(name)

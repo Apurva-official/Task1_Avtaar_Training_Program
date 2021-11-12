@@ -16,7 +16,7 @@
 
 #### 3. Install some important packages using following commands.
 
-> npm i express request body-parser ejs
+> npm i express request body-parser ejs uuid
 
  Make sure you are connected to Internet while installing.
 
